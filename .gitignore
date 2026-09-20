@@ -1,0 +1,55 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# assets
+/assets
+copy.md
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# velite files
+.velite
+
+# link preview content hash (local optimization only)
+public/previews/.content-hash
+
+# superpowers brainstorm/dashboard scratch
+.superpowers/
+
+# playwright MCP + local debug screenshots (scratch, not product assets)
+.playwright-mcp/
+/about-scroll-fix.png
+/experience-no-scrollbar.png
+/no-scrollbar.png
