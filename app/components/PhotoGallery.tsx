@@ -28,8 +28,7 @@ const photos = [
     zIndex: 50,
     direction: "left" as Direction,
     src: "/cb.webp",
-    alt: "Hardeep in a candid photo",
-    href: "https://x.com/rav4nn/status/1754776821370142754?s=20",
+    alt: "Shishir in a candid photo",
   },
   {
     id: 2,
@@ -59,8 +58,7 @@ const photos = [
     zIndex: 20,
     direction: "right" as Direction,
     src: "/chess.webp",
-    alt: "Hardeep playing chess",
-    href: "https://lichess.org/@/rav4nn",
+    alt: "Shishir playing chess",
   },
   {
     id: 5,
@@ -160,7 +158,6 @@ export const PhotoGallery = ({
                   src={photo.src}
                   alt={photo.alt}
                   direction={photo.direction}
-                  href={photo.href}
                 />
               </m.div>
             ))}

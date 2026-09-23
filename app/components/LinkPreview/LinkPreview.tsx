@@ -68,7 +68,9 @@ const initialState: LinkPreviewState = {
   isMounted: false,
   // Lazy-init: safe to call during render on client; will be false on SSR.
   supportsAnchor:
-    typeof CSS !== "undefined" && CSS.supports("anchor-name", "--test"),
+    typeof CSS !== "undefined" &&
+    typeof CSS.supports === "function" &&
+    CSS.supports("anchor-name", "--test"),
   isTouch:
     typeof window !== "undefined" &&
     window.matchMedia("(hover: none) and (pointer: coarse)").matches,

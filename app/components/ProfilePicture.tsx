@@ -88,7 +88,7 @@ export function ProfilePicture() {
           <m.img
             className="h-[100px] w-[100px] rounded-full object-cover"
             src="/hero_profile.webp"
-            alt="Hardeep Singh"
+            alt="Shishir Mahato"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{

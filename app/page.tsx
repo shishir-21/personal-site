@@ -101,7 +101,7 @@ export default async function Home() {
                 delay={HEADING_DELAY}
                 className="mx-auto max-w-2xl text-center text-4xl font-medium leading-tight tracking-tighter text-text-primary md:text-6xl md:leading-[64px]"
               >
-                Hey, I&apos;m Hardeep! <br />
+                Hey, I&apos;m Shishir! <br />
               </AnimatedText>
             </GridWrapper>
             <GridWrapper>
@@ -111,8 +111,8 @@ export default async function Home() {
                   delay={PARAGRAPH_DELAY}
                   className="leading-8 text-text-secondary"
                 >
-                  IIT Delhi → AI Engineer <br /> Currently contracting at Squidgy
-                  AI (UK) and co-founding Coffee Coach. Building full-stack AI
+                  B.Tech CSE (Data Science), 2026 → Fullstack + AI Developer <br /> Currently working at Modelsuite
+                  AI (Germany) and co-founding CodeFrogAI. Building full-stack AI
                   products with LLMs, RAG, and agentic systems.
                 </AnimatedText>
               </div>
@@ -141,7 +141,7 @@ export default async function Home() {
               </GridWrapper>
               <GridWrapper>
                 <h2 className="mx-auto max-w-xl text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
-                  Here&apos;s a quick intro about me && what I love to do
+                  Here&apos;s a quick intro about me & what I love to do
                 </h2>
               </GridWrapper>
             </div>
@@ -166,14 +166,14 @@ export default async function Home() {
                     </div>
                   </div>
                   <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
-                    From the lab to the internet
+                    From CSE to building real-world products
                   </h2>
                   <p className="mb-6 text-base leading-8 text-text-secondary">
-                    I studied Chemical Engineering at IIT Delhi — where I learnt
-                    to think in systems and optimize under constraints. What I
-                    didn&apos;t expect was that the most interesting problems
-                    I&apos;d encounter were messy, unstructured, and sitting
-                    inside data. That&apos;s what pulled me toward software.
+                    I am a Computer Science Engineering student specializing in Data Science,
+                    and I am passionate about building practical software products. I started
+                    with full-stack development and gradually moved toward AI-powered
+                    applications, working with modern technologies across frontend, backend,
+                    databases, and AI systems.
                   </p>
                   <p className="mb-6 text-base leading-8 text-text-secondary">
                     Now I build AI products that take that mess and make it
@@ -213,13 +213,13 @@ export default async function Home() {
                     Building things I actually want to exist
                   </h2>
                   <p className="mb-6 text-base leading-8 text-text-secondary">
-                    I like building things that solve problems for me, and seeing
-                    them become products that other people use.{" "}
+                    I like building things that solve real-world problems and turning ideas
+                    into products that people can actually use.{" "}
                     <AboutLink
-                      href="https://coffeecoach.app"
+                      href="https://github.com/CodeFrog-AI/CodeFrogAI-Web"
                       className="inline-flex items-baseline gap-1 font-medium text-indigo-600 underline decoration-indigo-300 underline-offset-2 transition-colors hover:text-indigo-500 hover:decoration-indigo-400"
                     >
-                      CoffeeCoach
+                      CodeFrog
                       <svg className="inline h-3 w-3 shrink-0 self-center" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3.5 3H9v5.5M9 3L3 9" /></svg>
                     </AboutLink>{" "}
                     took off on Reddit without a single paid promotion.{" "}

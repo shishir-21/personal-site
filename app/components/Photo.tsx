@@ -5,7 +5,6 @@ import Image, { ImageProps } from "next/image";
 import { m, useMotionValue } from "framer-motion";
 
 import { cn } from "../lib/utils";
-import { getRandomNumberInRange } from "@/app/lib/getRandomNumberInRange";
 
 const MotionImage = m(
   forwardRef(function MotionImage(
@@ -19,10 +18,10 @@ const MotionImage = m(
 type Direction = "left" | "right";
 
 const photoContainerStyle = (width: number, height: number) => ({
-  width,
-  height,
-  perspective: 400,
-  transform: `rotate(0deg) rotateX(0deg) rotateY(0deg)`,
+  width: `${width}px`,
+  height: `${height}px`,
+  perspective: "400px",
+  transform: "rotate(0deg) rotateX(0deg) rotateY(0deg)",
   zIndex: 1,
   WebkitTouchCallout: "none" as const,
   WebkitUserSelect: "none" as const,
@@ -48,7 +47,7 @@ export const Photo = ({
   height: number;
   href?: string;
 }) => {
-  const rotation = getRandomNumberInRange(1, 4) * (direction === "left" ? -1 : 1);
+  const rotation = direction === "left" ? -2 : 2;
   const x = useMotionValue(200);
   const y = useMotionValue(200);
 
