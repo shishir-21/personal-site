@@ -21,12 +21,6 @@ const photoContainerStyle = (width: number, height: number) => ({
   width: `${width}px`,
   height: `${height}px`,
   perspective: "400px",
-  transform: "rotate(0deg) rotateX(0deg) rotateY(0deg)",
-  zIndex: 1,
-  WebkitTouchCallout: "none" as const,
-  WebkitUserSelect: "none" as const,
-  userSelect: "none" as const,
-  touchAction: "none" as const,
 });
 
 export const Photo = ({
@@ -76,12 +70,12 @@ export const Photo = ({
         scale: 1.1,
         zIndex: 9999,
       }}
-      initial={{ rotate: 0 }}
+      initial={false}
       animate={{ rotate: rotation }}
       style={photoContainerStyle(width, height)}
       className={cn(
         className,
-        "relative mx-auto shrink-0 cursor-grab active:cursor-grabbing",
+        "relative mx-auto shrink-0 cursor-grab select-none touch-none active:cursor-grabbing",
       )}
       onClick={() => { if (href) window.open(href, "_blank", "noopener,noreferrer"); }}
       onMouseMove={handleMouse}

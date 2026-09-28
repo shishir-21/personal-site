@@ -5,75 +5,52 @@ import { Timeline } from "./Timeline";
 const resumeData: ResumeData = {
     experiences: [
       {
-        company: "4142 Ltd / Squidgy AI",
-        period: "2026 – Present",
+        company: "ModelSuite AI",
+        period: "Jun. 2026 – Present",
         positions: [
           {
-            title: "AI Software Engineer",
+            title: "Full Stack Developer Intern",
             description: [
-              `{{Full-time contract}} at Squidgy AI, a multi-agent AI product by 4142 Ltd (UK). Working within the engineering team on AI-powered features and {{agentic systems}}, full-time remote mapped to UK working hours.`,
+              `Built features for an {{AI-powered SaaS platform}}, including messaging, meeting scheduling, and workflow automation.`,
+              `Developed {{REST APIs}} using Node.js, Express.js, and MongoDB. Also integrated {{Google OAuth}} and {{Google Meet}}.`,
             ],
           },
         ],
       },
       {
-        company: "Stealth SaaS",
-        period: "2026 – Present",
+        company: "Bluestock Fintech Pvt. Ltd.",
+        period: "Feb. 2026 – Apr. 2026",
         positions: [
           {
-            title: "Sole Engineer (Freelance)",
+            title: "Software Developer Intern",
             description: [
-              `{{End-to-end ownership}} of a {{full-stack SaaS}} product for a UK-based client — architecture, build, and production deployment. Scope includes AI-powered features and agentic workflows. Client and product details under NDA.`,
+              `Worked on a {{stock trading platform}} using React.js, Node.js, Django, and PostgreSQL.`,
+              `Integrated REST APIs and used {{Pytest}} to test features and find bugs.`,
             ],
           },
         ],
       },
       {
-        company: "Coffee Coach",
-        period: "2025 – Present",
+        company: "Tata Motors Ltd.",
+        period: "Jan. 2025 – Mar. 2025",
         positions: [
           {
-            title: "Founding Engineer",
+            title: "Software Developer Intern",
             description: [
-              `Built {{Coffee Coach 0 to 1}} — a full-stack AI coaching app for specialty coffee brewers with personalised feedback via {{RAG pipelines}} and {{agentic feedback loops}}. {{65 daily active users}} acquired organically via Twitter/X and Reddit with zero paid promotion.`,
-              `Now {{co-founding and productizing}} with a product partner, building towards commercial launch. Stack: Next.js on Vercel, FastAPI on Hetzner VPS with Docker, Nginx, Certbot, PostgreSQL.`,
+              `Led a team of {{four interns}} to build a Ticket Management System used by over {{1,000 employees}}.`,
+              `Developed backend services and REST APIs using Node.js, Express.js, and MongoDB.`,
             ],
           },
         ],
       },
       {
-        company: "CovidWin",
-        period: "2021",
+        company: "Dr. B.C. Roy Engineering College",
+        period: "2022 – 2026",
         positions: [
           {
-            title: "Operations Lead",
+            title: "B.Tech – Computer Science & Engineering (Data Science)",
             description: [
-              `Co-built a COVID-19 resource platform from zero to full operations in {{48 hours}} during India's second wave — {{15 states}}, 50 cities, {{10,000 verified life-saving resources}}.`,
-              `Led volunteer coordination across 8 states, managing {{4,000 volunteers}} from partner organisations. Built a 15-minute automated data sync pipeline using Google Sheets API with deduplication and multi-source aggregation.`,
-            ],
-          },
-        ],
-      },
-      {
-        company: "Digital Marketing",
-        period: "2018 – 2024",
-        positions: [
-          {
-            title: "Freelance",
-            description: [
-              `Independent client work across digital marketing — SEO, content, and campaign management. Later years included lightweight {{process automation}}, leading to a full pivot into software and AI engineering in 2025.`,
-            ],
-          },
-        ],
-      },
-      {
-        company: "IIT Delhi",
-        period: "2013 – 2018",
-        positions: [
-          {
-            title: "Chemical Engineering",
-            description: [
-              `Chemical Engineering at IIT Delhi providing the {{analytical foundation}} for systems thinking and constraints-based problem solving.`,
+              `Studied {{Computer Science and Data Science}}, learning software development, databases, web technologies, and AI.`,
             ],
           },
         ],

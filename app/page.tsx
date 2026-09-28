@@ -203,60 +203,72 @@ export default async function Home() {
                       <Image
                         className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[8deg] rounded-lg object-cover shadow"
                         src="/looking-over-mountains.webp"
-                        alt="Hardeep standing on a mountaintop overlooking a valley"
+                        alt="Shishir standing on a mountaintop overlooking a valley"
                         width={180}
                         height={270}
                       />
                     </div>
                   </div>
+
                   <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
                     Building things I actually want to exist
                   </h2>
+
                   <p className="mb-6 text-base leading-8 text-text-secondary">
                     I like building things that solve real-world problems and turning ideas
                     into products that people can actually use.{" "}
                     <AboutLink
-                      href="https://github.com/CodeFrog-AI/CodeFrogAI-Web"
+                      href="https://github.com/shishir-21/SehatSathi"
                       className="inline-flex items-baseline gap-1 font-medium text-indigo-600 underline decoration-indigo-300 underline-offset-2 transition-colors hover:text-indigo-500 hover:decoration-indigo-400"
                     >
-                      CodeFrog
-                      <svg className="inline h-3 w-3 shrink-0 self-center" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3.5 3H9v5.5M9 3L3 9" /></svg>
+                      MediBrain AI
+                      <svg
+                        className="inline h-3 w-3 shrink-0 self-center"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                      >
+                        <path d="M3.5 3H9v5.5M9 3L3 9" />
+                      </svg>
                     </AboutLink>{" "}
-                    took off on Reddit without a single paid promotion.{" "}
+                    is an AI-powered healthcare platform focused on making healthcare
+                    information more accessible and useful.{" "}
                     <AboutLink
-                      href="https://github.com/rav4nn/youtube-rag-scraper"
+                      href="https://github.com/shishir-21/whatsapp-message-intelligence"
                       className="inline-flex items-baseline gap-1 font-medium text-indigo-600 underline decoration-indigo-300 underline-offset-2 transition-colors hover:text-indigo-500 hover:decoration-indigo-400"
                     >
-                      youtube-rag-scraper
-                      <svg className="inline h-3 w-3 shrink-0 self-center" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3.5 3H9v5.5M9 3L3 9" /></svg>
+                      WhatsApp Message Intelligence
+                      <svg
+                        className="inline h-3 w-3 shrink-0 self-center"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                      >
+                        <path d="M3.5 3H9v5.5M9 3L3 9" />
+                      </svg>
                     </AboutLink>{" "}
-                    hit {ytStats.stars} GitHub stars because apparently a lot of people had
-                    the same frustration with video content being impossible to
-                    query.{" "}
-                    <AboutLink
-                      href="https://github.com/rav4nn/flux-rag"
-                      className="inline-flex items-baseline gap-1 font-medium text-indigo-600 underline decoration-indigo-300 underline-offset-2 transition-colors hover:text-indigo-500 hover:decoration-indigo-400"
-                    >
-                      FluxRAG
-                      <svg className="inline h-3 w-3 shrink-0 self-center" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3.5 3H9v5.5M9 3L3 9" /></svg>
-                    </AboutLink>{" "}
-                    helped me understand RAG pipelines, eval and benchmarking
-                    which is enhancing my current AI Agent centric projects.
+                    helps small businesses filter WhatsApp messages, summarize important
+                    updates, identify messages that need human attention, and generate
+                    natural, human-like replies using AI.
                   </p>
                 </div>
-                <div className="hidden lg:block">
-                  <div className="relative mx-auto w-fit">
-                    <ShadowBox width={188} height={278}></ShadowBox>
-                    <Image
-                      className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[8deg] rounded-lg object-cover shadow"
-                      src="/looking-over-mountains.webp"
-                      alt="Hardeep standing on a mountaintop overlooking a valley"
-                      width={180}
-                      height={270}
-                    />
-                  </div>
-                </div>
-              </div>
+
+  <div className="hidden lg:block">
+    <div className="relative mx-auto w-fit">
+      <ShadowBox width={188} height={278}></ShadowBox>
+      <Image
+        className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[8deg] rounded-lg object-cover shadow"
+        src="/looking-over-mountains.webp"
+        alt="Shishir standing on a mountaintop overlooking a valley"
+        width={180}
+        height={270}
+      />
+    </div>
+  </div>
+</div>
+   
 
               {/* Section 3 */}
               <div className="grid grid-cols-1 gap-8 py-6 pr-12 lg:grid-cols-2 lg:items-center lg:justify-between xl:py-24">
@@ -277,11 +289,10 @@ export default async function Home() {
                     Life beyond the screen
                   </h2>
                   <p className="mb-6 text-base leading-8 text-text-secondary">
-                    I play chess obsessively. I played football every week until
-                    I tore my ACL last year. Still in recovery, still bitter
-                    about it. I befriend every mountain dog I meet. And I&apos;m
-                    on an ongoing, probably never-ending hunt for the best chhole
-                    bhature in Delhi.
+                      I enjoy playing video games in my free time. I love
+                      mountains and photography, and I never miss a chance to explore
+                      beautiful places and capture natural moments through my camera.
+                      I also love meeting mountain dogs whenever I travel.
                   </p>
                 </div>
                 <div className="hidden lg:block">
@@ -306,7 +317,7 @@ export default async function Home() {
                       <ShadowBox width={188} height={278}></ShadowBox>
                       <Image
                         className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[8deg] rounded-lg object-cover shadow"
-                        src="/hero_2.webp"
+                        src="/plant-monitoring.webp"
                         alt="Hardeep at a café in a pink polo, holding coffee with a bookshelf behind"
                         width={180}
                         height={270}
@@ -317,23 +328,33 @@ export default async function Home() {
                     Shipping is the habit
                   </h2>
                   <p className="mb-6 text-base leading-8 text-text-secondary">
-                    Since IIT Delhi I&apos;ve been building independently — a
-                    COVID-19 crisis platform, two ongoing contracts (Squidgy AI
-                    and an NDA SaaS for a UK-based client), and full-stack AI
-                    products like Coffee Coach that people actually use.
-                  </p>
-                  <p className="mb-6 text-base leading-8 text-text-secondary">
-                    I care about the things that matter in production — latency,
-                    evaluation, hallucination rates, cost per query.{" "}
+                    During my time at Dr. B.C. Roy Engineering College, I built a{" "}
                     <AboutLink
-                      href="https://github.com/rav4nn/flux-rag"
+                      href="https://github.com/shishir-21/Measuring-the-climate-around-the-plant"
                       className="inline-flex items-baseline gap-1 font-medium text-indigo-600 underline decoration-indigo-300 underline-offset-2 transition-colors hover:text-indigo-500 hover:decoration-indigo-400"
                     >
-                      FluxRAG
-                      <svg className="inline h-3 w-3 shrink-0 self-center" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3.5 3H9v5.5M9 3L3 9" /></svg>
+                      Plant Surroundings Monitoring System
+                      <svg
+                        className="inline h-3 w-3 shrink-0 self-center"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                      >
+                        <path d="M3.5 3H9v5.5M9 3L3 9" />
+                      </svg>
                     </AboutLink>{" "}
-                    exists because I wanted to benchmark those tradeoffs properly
-                    before shipping anything.
+                    using Raspberry Pi and machine learning. The device collects
+                    data about soil conditions, plant health, and weather to help
+                    farmers make better decisions, especially for off-season farming.
+                  </p>
+
+                  <p className="mb-6 text-base leading-8 text-text-secondary">
+                    It monitors temperature, humidity, and soil moisture while
+                    capturing images of plants. The system analyzes the collected
+                    data to help determine the water and nutrient requirements
+                    of plants, making it easier for farmers to monitor plant
+                    conditions and make informed decisions.
                   </p>
                 </div>
                 <div className="hidden lg:block">
@@ -341,7 +362,7 @@ export default async function Home() {
                     <ShadowBox width={188} height={278}></ShadowBox>
                     <Image
                       className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[8deg] rounded-lg object-cover shadow"
-                      src="/hero_2.webp"
+                      src="/plant-monitoring.webp"
                       alt="Hardeep at a café in a pink polo, holding coffee with a bookshelf behind"
                       width={180}
                       height={270}
