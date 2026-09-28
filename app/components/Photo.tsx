@@ -1,6 +1,6 @@
 "use client";
 
-import { MouseEvent, Ref, forwardRef } from "react";
+import { MouseEvent, Ref, forwardRef, useEffect, useState } from "react";
 import Image, { ImageProps } from "next/image";
 import { m, useMotionValue } from "framer-motion";
 
@@ -41,6 +41,11 @@ export const Photo = ({
   height: number;
   href?: string;
 }) => {
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const rotation = direction === "left" ? -2 : 2;
   const x = useMotionValue(200);
   const y = useMotionValue(200);
@@ -58,8 +63,10 @@ export const Photo = ({
 
   return (
     <m.div
-      drag
-      dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+      drag={isMounted}
+      dragConstraints={
+        isMounted ? { left: 0, right: 0, top: 0, bottom: 0 } : undefined
+      }
       whileTap={{ scale: 1.2, zIndex: 9999 }}
       whileHover={{
         scale: 1.1,
