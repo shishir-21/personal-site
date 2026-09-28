@@ -5,16 +5,23 @@ import type { GitHubStats, ContributionData } from "./types";
 
 const GITHUB_USERNAME = "shishir-21";
 
-async function fetchContributions(token: string): Promise<ContributionData | null> {
-  // Use the same rolling one-year window as the GitHub profile.
+function getYearToDateRange() {
   const today = new Date();
-  const oneYearAgo = new Date();
-  oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+  const startOfYear = new Date(today.getFullYear(), 0, 1);
+
+  return {
+    from: startOfYear.toISOString(),
+    to: today.toISOString(),
+  };
+}
+
+async function fetchContributions(token: string): Promise<ContributionData | null> {
+  const { from, to } = getYearToDateRange();
 
   const query = `
     query {
       user(login: "${GITHUB_USERNAME}") {
-        contributionsCollection(from: "${oneYearAgo.toISOString()}", to: "${today.toISOString()}") {
+        contributionsCollection(from: "${from}", to: "${to}") {
           contributionCalendar {
             totalContributions
             weeks {
@@ -102,15 +109,12 @@ export const getGitHubStats = unstable_cache(
     }
 
     try {
-      // Fetch stars, forks, and commits across all repos via GraphQL
-      const today = new Date();
-      const oneYearAgo = new Date();
-      oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+      const { from, to } = getYearToDateRange();
 
       const statsQuery = `
         query {
           user(login: "${GITHUB_USERNAME}") {
-            contributionsCollection(from: "${oneYearAgo.toISOString()}", to: "${today.toISOString()}") {
+            contributionsCollection(from: "${from}", to: "${to}") {
               totalCommitContributions
             }
             repositories(first: 100, ownerAffiliations: OWNER, privacy: PUBLIC) {
@@ -149,7 +153,6 @@ export const getGitHubStats = unstable_cache(
         }
       }
 
-      // Fetch contribution graph data
       const contributions = await fetchContributions(token);
 
       return {
@@ -169,5 +172,5 @@ export const getGitHubStats = unstable_cache(
     }
   },
   ["github-stats"],
-  { revalidate: 86400 } // Revalidate every 24 hours
+  { revalidate: 86400 }
 );
