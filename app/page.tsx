@@ -44,6 +44,30 @@ export default async function Home() {
 
   const projects: Project[] = [
     {
+      title: "MediBrain",
+      description:
+        "{{MediBrain (SehatSathi)}} is a full-stack healthcare platform for discovering doctors and hospitals, booking appointments, and tracking symptoms and vitals. It includes a symptom-based AI health assistant. Built with {{Next.js}}, {{NestJS}}, and {{MongoDB Atlas}}. The current AI service uses a mock implementation and is structured for future model/API integration.",
+      url: "https://github.com/shishir-21/SehatSathi",
+      logo: "",
+      stats: ["Next.js + NestJS", "MongoDB Atlas", "Healthcare"],
+    },
+    {
+      title: "WhatsApp Message Intelligence",
+      description:
+        "A {{message processing pipeline}} that monitors one selected WhatsApp group using {{WPPConnect}}, stores incoming messages in {{PostgreSQL}} with Prisma, and uses the {{Groq API}} for classification and information extraction. A review workflow lets users validate or correct AI results. Built with {{Next.js}}, {{TypeScript}}, {{Express.js}}, and Prisma.",
+      url: "https://github.com/shishir-21/whatsapp-message-intelligence",
+      logo: "",
+      stats: ["WPPConnect", "Groq API", "PostgreSQL + Prisma"],
+    },
+    {
+      title: "CodeFrog AI",
+      description:
+        "{{CodeFrog AI}} is an AI software engineering platform currently in development. It is being built around repository understanding, {{RAG}}, embeddings, vector search, and code-aware LLM workflows, with a planned agent flow for code changes and GitHub automation. Built with {{Next.js}}, {{TypeScript}}, {{FastAPI}}, {{PostgreSQL}}, and {{pgvector}}.",
+      url: "https://github.com/shishir-21/CodeFrogAI-Web",
+      logo: "",
+      stats: ["RAG + vector search", "FastAPI", "PostgreSQL + pgvector"],
+    },
+    {
       title: "coffeecoach.app",
       description:
         "Most coffee brewing advice online is scattered and contradictory. I ingested high-quality brewing data, made a {{RAG pipeline}} on top of it, and built an {{agentic coaching system}} based on that data — {{LLM orchestration}} with {{feedback loops}} that adapt recommendations based on user input.\n\nWrapped it all in a {{full-stack}} AI coaching app.",
@@ -425,13 +449,22 @@ export default async function Home() {
                     <div className="flex-1 space-y-3">
                       <div className="flex items-center gap-4">
                         <div className="shrink-0 md:hidden">
-                          <Image
-                            src={project.logo}
-                            alt={`${project.title} logo`}
-                            width={64}
-                            height={64}
-                            className="object-contain"
-                          />
+                          {project.logo ? (
+                            <Image
+                              src={project.logo}
+                              alt={`${project.title} logo`}
+                              width={64}
+                              height={64}
+                              className="object-contain"
+                            />
+                          ) : (
+                            <div
+                              aria-hidden="true"
+                              className="flex h-16 w-16 items-center justify-center rounded-xl bg-indigo-50 text-lg font-semibold text-indigo-600"
+                            >
+                              {project.title.slice(0, 2).toUpperCase()}
+                            </div>
+                          )}
                         </div>
                         <div className="md:pl-0 pl-1">
                           <h3 className="text-xl font-semibold tracking-tight text-text-primary group-hover:text-indigo-600">
@@ -473,13 +506,22 @@ export default async function Home() {
                       </div>
                     </div>
                     <div className="hidden shrink-0 items-center justify-center md:flex md:w-36">
-                      <Image
-                        src={project.logo}
-                        alt={`${project.title} logo`}
-                        width={120}
-                        height={120}
-                        className="object-contain"
-                      />
+                      {project.logo ? (
+                        <Image
+                          src={project.logo}
+                          alt={`${project.title} logo`}
+                          width={120}
+                          height={120}
+                          className="object-contain"
+                        />
+                      ) : (
+                        <div
+                          aria-hidden="true"
+                          className="flex h-28 w-28 items-center justify-center rounded-2xl bg-indigo-50 text-3xl font-semibold text-indigo-600"
+                        >
+                          {project.title.slice(0, 2).toUpperCase()}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </a>
