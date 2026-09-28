@@ -6,10 +6,10 @@ import type { GitHubStats, ContributionData } from "./types";
 const GITHUB_USERNAME = "shishir-21";
 
 async function fetchContributions(token: string): Promise<ContributionData | null> {
-  // Calculate rolling 6-month window ending today
+  // Use the same rolling one-year window as the GitHub profile.
   const today = new Date();
   const oneYearAgo = new Date();
-  oneYearAgo.setMonth(oneYearAgo.getMonth() - 6);
+  oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
 
   const query = `
     query {
