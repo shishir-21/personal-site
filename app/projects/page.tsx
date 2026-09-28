@@ -28,12 +28,28 @@ export default async function ProjectPage() {
 
   const projects: Project[] = [
     {
-      title: "coffeecoach.app",
+      title: "MediBrain",
       description:
-        "Most coffee brewing advice online is scattered and contradictory. I ingested high-quality brewing data, made a {{RAG pipeline}} on top of it, and built an {{agentic coaching system}} based on that data — {{LLM orchestration}} with {{feedback loops}} that adapt recommendations based on user input.\n\nWrapped it all in a {{full-stack}} AI coaching app.",
-      url: "https://coffeecoach.app",
-      logo: "/projects/coffee-coach.webp",
-      stats: ["65 daily active users", "zero paid promotion"],
+        "Many people struggle to get quick medical guidance or access the right healthcare services. {{MediBrain (SehatSathi)}} is a full-stack healthcare platform that helps users find doctors, explore hospitals, book appointments, and track symptoms and vitals. It also includes an {{AI health assistant}} for symptom-based guidance, recovery suggestions, diet and lifestyle advice. Built with {{Next.js}}, {{NestJS}}, and {{MongoDB Atlas}}, the platform follows a {{REST API architecture}} with JWT authentication and a modular AI service layer.\n\nThe AI flow processes user symptoms and returns structured guidance such as severity, recommendations, diet suggestions, and whether to consult a doctor, with the current AI service designed as a bridge for future ML/AI API integration.",
+      url: "https://github.com/shishir-21/SehatSathi",
+      logo: "/projects/medibrain.webp",
+      stats: ["Next.js + NestJS", "MongoDB Atlas", "AI health assistant"],
+    },
+    {
+      title: "WhatsApp Message Intelligence",
+      description:
+        "Work WhatsApp groups can generate a large volume of messages, making important updates difficult to track. I built a {{message processing pipeline}} with {{WPPConnect}} to monitor one selected WhatsApp group, capture incoming messages, and store them in {{PostgreSQL}} using Prisma. Messages are sent to the {{Groq API}} for AI classification, priority detection, field extraction, and summaries. {{Zod validation}} checks structured AI responses, while a {{human review workflow}} lets users approve or correct uncertain results.\n\nBuilt as a {{full-stack AI application}} using Next.js, TypeScript, Express.js, PostgreSQL, Prisma, and Groq.",
+      url: "https://github.com/shishir-21/whatsapp-message-intelligence",
+      logo: "/projects/whatsapp-message-intelligence.webp",
+      stats: ["WPPConnect + Puppeteer", "Groq API", "PostgreSQL + Prisma"],
+    },
+    {
+      title: "CodeFrog AI",
+      description:
+        "Large codebases are difficult to understand, debug, and maintain manually. {{CodeFrog AI}} is an AI software engineering platform that connects with GitHub repositories, understands the codebase, identifies bugs and security issues, and helps generate tested code changes. It uses a {{RAG pipeline}} with repository parsing, chunking, embeddings, vector search, and LLM-based retrieval to provide codebase-aware responses.\n\nThe agent workflow can move from {{repository analysis}} to planning, code generation, testing, security checks, human approval, Git branch creation, commits, and Pull Requests. Built with {{Next.js}}, {{TypeScript}}, {{FastAPI}}, {{PostgreSQL}}, {{pgvector}}, and AI provider APIs.",
+      url: "https://github.com/shishir-21/CodeFrogAI-Web",
+      logo: "/projects/codefrog-ai.webp",
+      stats: ["RAG + vector search", "FastAPI + PostgreSQL", "GitHub automation"],
     },
     {
       title: "splitwala",
