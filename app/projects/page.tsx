@@ -80,13 +80,22 @@ export default async function ProjectPage() {
                 <div className="flex-1 space-y-3">
                   <div className="flex items-center gap-3">
                     <div className="shrink-0 md:hidden">
-                      <Image
-                        src={project.logo}
-                        alt={`${project.title} logo`}
-                        width={40}
-                        height={40}
-                        className="object-contain"
-                      />
+                      {project.logo ? (
+                        <Image
+                          src={project.logo}
+                          alt={`${project.title} logo`}
+                          width={40}
+                          height={40}
+                          className="object-contain"
+                        />
+                      ) : (
+                        <div
+                          aria-hidden="true"
+                          className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-50 text-sm font-semibold text-indigo-600"
+                        >
+                          {project.title.slice(0, 2).toUpperCase()}
+                        </div>
+                      )}
                     </div>
                     <div>
                       <h2 className="text-xl font-semibold tracking-tight text-text-primary group-hover:text-indigo-600">
@@ -116,13 +125,22 @@ export default async function ProjectPage() {
                   </div>
                 </div>
                 <div className="hidden shrink-0 items-center justify-center md:flex md:w-36">
-                  <Image
-                    src={project.logo}
-                    alt={`${project.title} logo`}
-                    width={120}
-                    height={120}
-                    className="object-contain"
-                  />
+                  {project.logo ? (
+                    <Image
+                      src={project.logo}
+                      alt={`${project.title} logo`}
+                      width={120}
+                      height={120}
+                      className="object-contain"
+                    />
+                  ) : (
+                    <div
+                      aria-hidden="true"
+                      className="flex h-28 w-28 items-center justify-center rounded-2xl bg-indigo-50 text-3xl font-semibold text-indigo-600"
+                    >
+                      {project.title.slice(0, 2).toUpperCase()}
+                    </div>
+                  )}
                 </div>
               </div>
             </a>
