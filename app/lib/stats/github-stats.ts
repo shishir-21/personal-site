@@ -3,7 +3,7 @@
 import { unstable_cache } from "next/cache";
 import type { GitHubStats, ContributionData } from "./types";
 
-const GITHUB_USERNAME = "rav4nn";
+const GITHUB_USERNAME = "shishir-21";
 
 async function fetchContributions(token: string): Promise<ContributionData | null> {
   // Calculate rolling 6-month window ending today
