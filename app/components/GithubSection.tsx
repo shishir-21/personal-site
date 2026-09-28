@@ -10,7 +10,7 @@ export async function GithubSection() {
       <div className="flex flex-col gap-4 lg:flex-row">
         {/* Contribution graph — stretches to fill available width */}
         <a
-          href="https://github.com/rav4nn"
+          href="https://github.com/shishir-21"
           target="_blank"
           rel="noopener noreferrer"
           className="block min-w-0 flex-1"
