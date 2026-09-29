@@ -66,11 +66,7 @@ export function CalendarBento() {
     0,
   ).getDate();
 
-  const bookingLink = `https://cal.com/shishir-dxpp1j?month=${currentYear}-${(
-    currentDate.getMonth() + 1
-  )
-    .toString()
-    .padStart(2, "0")}`;
+  const bookingLink = process.env.NEXT_PUBLIC_CAL_URL ?? "";
 
   return (
     <BentoCard height="h-[180px] md:h-[260px]" linkTo={bookingLink}>
