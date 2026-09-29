@@ -17,7 +17,7 @@ function DesktopNav() {
       className="hidden h-16 w-full items-center justify-between border-b border-border-primary/50 px-4 md:flex"
     >
       <Link href="/" aria-label="Home" className="text-sm font-semibold tracking-tight text-text-primary">
-        shishir.cv
+        Shishir Mahato - Software Engineer
       </Link>
       <SocialPill />
     </nav>
@@ -31,7 +31,7 @@ function MobileNav() {
       className="flex h-16 items-center border-b border-border-primary/50 px-3 md:hidden"
     >
       <Link href="/" aria-label="Home" className="text-sm font-semibold tracking-tight text-text-primary">
-        shishir.cv
+        Shishir Mahato - Software Engineer
       </Link>
     </nav>
   );
