@@ -25,7 +25,7 @@ interface Project {
 }
 
 export const metadata: Metadata = {
-  title: "Hardeep Singh — Software Engineer",
+  title: "Shishir Mahato — Software Engineer",
   description: "Software engineer, open-source contributor, and speaker. Building products at the intersection of AI and developer tooling.",
 };
 
