@@ -87,7 +87,7 @@ export default async function Home() {
                   className="leading-8 text-text-secondary"
                 >
                   B.Tech CSE (Data Science), 2026 → Fullstack + AI Developer <br /> Currently working at Modelsuite
-                  AI (Germany) and co-founding CodeFrogAI. Building full-stack AI
+                  AI (Germany) and co-founding Helpful Hearts AI. Building full-stack AI
                   products with LLMs, RAG, and agentic systems.
                 </AnimatedText>
               </div>
