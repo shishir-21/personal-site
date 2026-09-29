@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   description: siteMetadata.description,
   icons: {
-    icon: "/favicon.jpg",
+    icon: "/favicon.svg",
   },
   openGraph: {
     title: siteMetadata.title,
