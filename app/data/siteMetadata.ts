@@ -19,7 +19,7 @@ export const siteMetadata = {
   twitterHandle: "@Shishir510132",
   codepen: "",
   linkedin: "https://www.linkedin.com/in/shishir-mahato-4468aa280/",
-  cal: process.env.NEXT_PUBLIC_CAL_URL ?? "",
+  cal: "https://cal.com/shishir-dxpp1j",
   resume: "/Shishir_Mahato_Resume.pdf",
   snippets: "",
   carbonCode: "",
