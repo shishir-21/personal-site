@@ -66,7 +66,7 @@ export function CalendarBento() {
     0,
   ).getDate();
 
-  const bookingLink = process.env.NEXT_PUBLIC_CAL_URL ?? "";
+  const bookingLink = "https://cal.com/shishir-dxpp1j";
 
   return (
     <BentoCard height="h-[180px] md:h-[260px]" linkTo={bookingLink}>
