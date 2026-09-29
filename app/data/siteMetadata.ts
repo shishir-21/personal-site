@@ -8,7 +8,7 @@ export const siteMetadata = {
   description:
     "Building full-stack and AI-powered products that solve real-world problems.",
   language: "en-us",
-  siteUrl: "",
+  siteUrl: "http://localhost:3000",
   siteRepo: "https://github.com/shishir-21",
   avatarImage: "/hero.webp",
   socialBanner: "/hero.webp",
