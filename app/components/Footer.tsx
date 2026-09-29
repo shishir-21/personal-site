@@ -11,7 +11,7 @@ export function Footer(): ReactNode {
           <div className="flex max-w-6xl px-4 lg:mx-auto lg:px-4 xl:px-0">
             <div className="flex w-full items-center justify-between py-6 text-sm">
               <Link className="inline-block text-sm font-semibold tracking-tight text-text-primary" href="/">
-                hardeep.cv
+                shishir.cv
               </Link>
               <p className="text-gray-500" suppressHydrationWarning>
                 © {new Date().getFullYear()} Shishir Mahato
