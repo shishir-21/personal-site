@@ -14,7 +14,7 @@ export function Footer(): ReactNode {
                 hardeep.cv
               </Link>
               <p className="text-gray-500" suppressHydrationWarning>
-                © {new Date().getFullYear()} Hardeep Singh
+                © {new Date().getFullYear()} Shishir Mahato
               </p>
             </div>
           </div>
