@@ -261,13 +261,13 @@ export function GetInTouch() {
                 {/* Left column — text */}
                 <div className="flex flex-col justify-between lg:w-[65%]">
                   <p className="max-w-[420px] text-base leading-8 text-gray-300">
-                    I&apos;m open to AI engineering roles, contract work, and
+                    I&apos;m open to Fullstack + AI Developer roles, contract work, and
                     interesting problems.
                     <br />
                     If something I&apos;ve built resonates, drop me a message!
                   </p>
                   <p className="mt-8 text-sm text-gray-400">
-                    Based in Delhi, India.
+                    Based in West Bengal, India.
                     <br />
                     Open to remote.
                   </p>
