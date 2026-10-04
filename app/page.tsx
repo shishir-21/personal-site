@@ -26,7 +26,7 @@ interface Project {
 
 export const metadata: Metadata = {
   title: "Shishir Mahato — Software Engineer",
-  description: "Software engineer, open-source contributor, and speaker. Building products at the intersection of AI and developer tooling.",
+  description: "Full Stack + AI Developer building production-ready web and mobile applications with React, Next.js, Node.js, TypeScript, and AI systems.",
 };
 
 // react-doctor-disable-next-line react-doctor/no-giant-component
@@ -86,9 +86,8 @@ export default async function Home() {
                   delay={PARAGRAPH_DELAY}
                   className="leading-8 text-text-secondary"
                 >
-                  B.Tech CSE (Data Science), 2026 → Fullstack + AI Developer <br /> Currently working at Modelsuite
-                  AI (Germany) and co-founding Helpful Hearts AI. Building full-stack AI
-                  products with LLMs, RAG, and agentic systems.
+                  B.Tech CSE (Data Science), 2026 → Full Stack + AI Developer <br /> I build production-ready web and mobile
+                  applications using modern full-stack technologies and AI-assisted development workflows.
                 </AnimatedText>
               </div>
             </GridWrapper>
@@ -134,7 +133,7 @@ export default async function Home() {
                       <Image
                         className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[-8deg] rounded-lg object-cover shadow"
                         src="/hero.webp"
-                        alt="Hardeep in a cap and puffer jacket, outdoor selfie"
+                        alt="Shishir Mahato"
                         width={180}
                         height={270}
                       />
@@ -144,15 +143,12 @@ export default async function Home() {
                     From CSE to building real-world products
                   </h2>
                   <p className="mb-6 text-base leading-8 text-text-secondary">
-                    I am a Computer Science Engineering student specializing in Data Science,
-                    and I am passionate about building practical software products. I started
-                    with full-stack development and gradually moved toward AI-powered
-                    applications, working with modern technologies across frontend, backend,
-                    databases, and AI systems.
+                    I am a Computer Science Engineering graduate specializing in Data Science, focused on building
+                    complete products from frontend to backend, databases, APIs, deployment, and AI features.
                   </p>
                   <p className="mb-6 text-base leading-8 text-text-secondary">
-                    Now I build AI products that take that mess and make it
-                    usable — pipelines, tooling, apps.
+                    My development workflow is AI-assisted: I use tools such as Claude and Cursor to design,
+                    implement, debug, test, and iterate faster while keeping engineering quality and ownership.
                   </p>
                 </div>
                 <div className="hidden lg:order-1 lg:block">
@@ -161,7 +157,7 @@ export default async function Home() {
                     <Image
                       className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[-8deg] rounded-lg object-cover shadow"
                       src="/hero.webp"
-                      alt="Hardeep Singh"
+                      alt="Shishir Mahato"
                       width={180}
                       height={270}
                     />
@@ -254,20 +250,18 @@ export default async function Home() {
                       <Image
                         className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[-8deg] rounded-lg object-cover shadow"
                         src="/surgery.webp"
-                        alt="Hardeep's leg post ACL surgery, in recovery"
+                        alt="Project development photo"
                         width={180}
                         height={270}
                       />
                     </div>
                   </div>
                   <h2 className="mb-6 w-full text-balance text-3xl font-medium leading-[40px] tracking-tighter text-text-primary">
-                    Life beyond the screen
+                    Outside of building software
                   </h2>
                   <p className="mb-6 text-base leading-8 text-text-secondary">
-                      I enjoy playing video games in my free time. I love
-                      mountains and photography, and I never miss a chance to explore
-                      beautiful places and capture natural moments through my camera.
-                      I also love meeting mountain dogs whenever I travel.
+                      I enjoy photography, exploring new places, and building side projects. I also like learning
+                      new technologies by turning ideas into working products.
                   </p>
                 </div>
                 <div className="hidden lg:block">
@@ -276,7 +270,7 @@ export default async function Home() {
                     <Image
                       className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[-8deg] rounded-lg object-cover shadow"
                       src="/surgery.webp"
-                      alt="ACL recovery"
+                      alt="Project development photo"
                       width={180}
                       height={270}
                     />
@@ -293,7 +287,7 @@ export default async function Home() {
                       <Image
                         className="absolute left-0 top-0 h-[270px] w-[180px] rotate-[8deg] rounded-lg object-cover shadow"
                         src="/plant-monitoring.webp"
-                        alt="Hardeep at a café in a pink polo, holding coffee with a bookshelf behind"
+                        alt="Shishir working on a project"
                         width={180}
                         height={270}
                       />
