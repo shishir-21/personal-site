@@ -6,9 +6,9 @@ export const siteMetadata = {
   author: "Shishir Mahato",
   headerTitle: "Shishir's Portfolio",
   description:
-    "Building full-stack and AI-powered products that solve real-world problems.",
+    "Full Stack + AI Developer building production-ready web and mobile applications with AI-assisted engineering workflows.",
   language: "en-us",
-  siteUrl: "http://localhost:3000",
+  siteUrl: "https://shishir-portfolio-online.vercel.app",
   siteRepo: "https://github.com/shishir-21",
   avatarImage: "/hero.webp",
   socialBanner: "/hero.webp",
