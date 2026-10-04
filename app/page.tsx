@@ -86,12 +86,12 @@ export default async function Home() {
                   delay={PARAGRAPH_DELAY}
                   className="leading-8 text-text-secondary"
                 >
-                  B.Tech CSE (Data Science), 2026 → Fullstack + AI Developer <br /> Currently working at Modelsuite AI (Germany) and{" "}
+                  B.Tech CSE (Data Science), 2026 → Fullstack + AI Developer <br /> Currently working at Modelsuite AI (Germany) and founder of{" "}
                   <AboutLink
                     href="https://github.com/shishir-21/Helpful-Hearts-Mobile"
                     className="font-medium text-indigo-600 underline decoration-indigo-300 underline-offset-2 transition-colors hover:text-indigo-500 hover:decoration-indigo-400"
                   >
-                    Founder of Helpful Hearts AI
+                    Helpful Hearts AI
                   </AboutLink>
                   . Building full-stack AI products with LLMs, RAG, and agentic systems.
                 </AnimatedText>
