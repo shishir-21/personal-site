@@ -38,7 +38,7 @@ const photos = [
     zIndex: 40,
     direction: "left" as Direction,
     src: "/football.webp",
-    alt: "Hardeep playing football",
+    alt: "Shishir playing football",
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ const photos = [
     zIndex: 30,
     direction: "right" as Direction,
     src: "/hero_2.webp",
-    alt: "Hardeep at a café in a pink polo, holding coffee with a bookshelf behind",
+    alt: "Shishir at a café",
   },
   {
     id: 4,
@@ -68,7 +68,7 @@ const photos = [
     zIndex: 10,
     direction: "left" as Direction,
     src: "/mountains-dog.webp",
-    alt: "Hardeep petting a mountain dog on a trek",
+    alt: "Shishir with a mountain dog",
   },
 ];
 

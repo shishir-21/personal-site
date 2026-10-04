@@ -6,13 +6,13 @@ const resumeData: ResumeData = {
     experiences: [
       {
         company: "ModelSuite AI",
-        period: "Jun. 2026 – Present",
+        period: "Jun. 2026 – Sep. 2026",
         positions: [
           {
-            title: "Full Stack Developer Intern",
+            title: "Full Stack + AI Developer",
             description: [
-              `Built features for an {{AI-powered SaaS platform}}, including messaging, meeting scheduling, and workflow automation.`,
-              `Developed {{REST APIs}} using Node.js, Express.js, and MongoDB. Also integrated {{Google OAuth}} and {{Google Meet}}.`,
+              `Built production-ready features for an {{AI-powered SaaS platform}}, including messaging, meeting scheduling, performance tracking, and workflow automation.`,
+              `Developed {{REST APIs}} with Node.js, Express.js, and MongoDB; integrated {{Google OAuth}} and {{Google Meet}} for collaboration workflows.`,
             ],
           },
         ],
