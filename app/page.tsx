@@ -91,7 +91,7 @@ export default async function Home() {
                     href="https://github.com/shishir-21/Helpful-Hearts-Mobile"
                     className="font-medium text-indigo-600 underline decoration-indigo-300 underline-offset-2 transition-colors hover:text-indigo-500 hover:decoration-indigo-400"
                   >
-                    Helpful Hearts AI
+                    Helpful Hugs AI
                   </AboutLink>
                   . Building full-stack AI products with LLMs, RAG, and agentic systems.
                 </AnimatedText>
