@@ -11,10 +11,10 @@ const resumeData: ResumeData = {
         {
           title: "Full Stack + AI Developer",
           description: [
-            `Built production-ready features for an {{AI-powered SaaS platform}}, including messaging, meeting scheduling, performance tracking, and workflow automation.`,
-            `Developed backend {{REST APIs}} and data models with Node.js, Express.js, and MongoDB to support collaboration and workflow features.`,
-            `Integrated {{Google OAuth}} and {{Google Meet}} to support account authentication and meeting workflows inside the platform.`,
-            `Contributed to AI-assisted workflow automation, including automated email notifications for overdue tasks, and collaborated through Agile sprints, GitHub issues, and code reviews.`,
+            `Worked on the company's AI-powered SaaS platform, building features for messaging, meeting scheduling, performance tracking, and everyday team workflows.`,
+            `Built backend {{APIs}} using Node.js, Express.js, and MongoDB to connect the frontend with the platform's data and features.`,
+            `Added {{Google OAuth}} and {{Google Meet}} integration so users could sign in and create meeting links as part of their workflow.`,
+            `Also worked on workflow automation, including an email notification feature for overdue tasks, and used GitHub to manage changes and work with the team.`,
           ],
         },
       ],
@@ -26,10 +26,10 @@ const resumeData: ResumeData = {
         {
           title: "Software Developer Intern",
           description: [
-            `Worked on a {{stock trading platform}} using React.js, Node.js, Django, and PostgreSQL, contributing to features across the frontend and backend.`,
-            `Worked with {{real-time data}} workflows and WebSocket-based updates to help deliver timely market information in the application.`,
-            `Integrated REST APIs and worked with financial data sources, including Yahoo Finance and Google Finance-related data workflows.`,
-            `Used {{Pytest}} to test features, identify bugs, and help prevent regressions while collaborating in an Agile development workflow.`,
+            `Worked on a {{stock trading platform}} using React.js, Node.js, Django, and PostgreSQL.`,
+            `Worked on {{real-time market data}} updates using WebSockets, so the application could show fresh data without relying only on manual page refreshes.`,
+            `Worked with financial data and API integrations related to {{Yahoo Finance}} and {{Google Finance}}.`,
+            `Tested backend features with {{Pytest}} and helped track down bugs during development.`,
           ],
         },
       ],
@@ -41,10 +41,10 @@ const resumeData: ResumeData = {
         {
           title: "Software Developer Intern · Full Stack",
           description: [
-            `Led a team of {{four interns}} to build a Ticket Management System used by more than {{1,000 employees}}.`,
-            `Built backend services and {{REST APIs}} with Node.js and Express.js, using MongoDB to store and manage ticket and workflow data.`,
-            `Helped design ticket workflows for raising, tracking, and managing employee requests, with a focus on clear status tracking and usability.`,
-            `Improved database operations and coordinated team development using Git-based workflows, task breakdown, and collaborative debugging.`,
+            `Led a team of {{four interns}} to build a Ticket Management System for more than {{1,000 employees}}.`,
+            `Built backend APIs with Node.js and Express.js and used MongoDB to store ticket and employee request data.`,
+            `Worked on the ticket flow so employees could raise requests and keep track of their status.`,
+            `Worked with the team to debug issues, improve database operations, and manage code using Git.`,
           ],
         },
       ],
@@ -56,9 +56,9 @@ const resumeData: ResumeData = {
         {
           title: "B.Tech · Computer Science & Engineering (Data Science)",
           description: [
-            `Completed a B.Tech in {{Computer Science and Engineering (Data Science)}} with a {{7.08 CGPA}}.`,
-            `Built a foundation in programming, data structures, databases, web development, and data science through coursework and practical projects.`,
-            `Applied classroom learning in projects such as a Raspberry Pi-based Plant Surroundings Monitoring System using IoT sensors and machine learning.`,
+            `Completed my B.Tech in {{Computer Science and Engineering (Data Science)}} with a {{7.08 CGPA}}.`,
+            `During college, I learned core computer science concepts and applied them in web development, database, and data science projects.`,
+            `One of my projects was a Raspberry Pi-based Plant Surroundings Monitoring System that collected sensor data and used machine learning as part of the monitoring process.`,
           ],
         },
       ],
