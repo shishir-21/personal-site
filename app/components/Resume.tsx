@@ -3,60 +3,68 @@ import { parseHighlights } from "./parseHighlights";
 import { Timeline } from "./Timeline";
 
 const resumeData: ResumeData = {
-    experiences: [
-      {
-        company: "ModelSuite AI",
-        period: "Jun. 2026 – Sep. 2026",
-        positions: [
-          {
-            title: "Full Stack + AI Developer",
-            description: [
-              `Built production-ready features for an {{AI-powered SaaS platform}}, including messaging, meeting scheduling, performance tracking, and workflow automation.`,
-              `Developed {{REST APIs}} with Node.js, Express.js, and MongoDB; integrated {{Google OAuth}} and {{Google Meet}} for collaboration workflows.`,
-            ],
-          },
-        ],
-      },
-      {
-        company: "Bluestock Fintech Pvt. Ltd.",
-        period: "Feb. 2026 – Apr. 2026",
-        positions: [
-          {
-            title: "Software Developer Intern",
-            description: [
-              `Worked on a {{stock trading platform}} using React.js, Node.js, Django, and PostgreSQL.`,
-              `Integrated REST APIs and used {{Pytest}} to test features and find bugs.`,
-            ],
-          },
-        ],
-      },
-      {
-        company: "Tata Motors Ltd.",
-        period: "Jan. 2025 – Mar. 2025",
-        positions: [
-          {
-            title: "Software Developer Intern",
-            description: [
-              `Led a team of {{four interns}} to build a Ticket Management System used by over {{1,000 employees}}.`,
-              `Developed backend services and REST APIs using Node.js, Express.js, and MongoDB.`,
-            ],
-          },
-        ],
-      },
-      {
-        company: "Dr. B.C. Roy Engineering College",
-        period: "2022 – 2026",
-        positions: [
-          {
-            title: "B.Tech – Computer Science & Engineering (Data Science)",
-            description: [
-              `Studied {{Computer Science and Data Science}}, learning software development, databases, web technologies, and AI.`,
-            ],
-          },
-        ],
-      },
-    ],
-    avatarUrl: "/hero_icon.webp",
+  experiences: [
+    {
+      company: "ModelSuite AI",
+      period: "Jun. 2026 – Sep. 2026",
+      positions: [
+        {
+          title: "Full Stack + AI Developer",
+          description: [
+            `Worked on the company's AI-powered SaaS platform, building features for messaging, meeting scheduling, performance tracking, and everyday team workflows.`,
+            `Built backend {{APIs}} using Node.js, Express.js, and MongoDB to connect the frontend with the platform's data and features.`,
+            `Added {{Google OAuth}} and {{Google Meet}} integration so users could sign in and create meeting links as part of their workflow.`,
+            `Also worked on workflow automation, including an email notification feature for overdue tasks, and used GitHub to manage changes and work with the team.`,
+          ],
+        },
+      ],
+    },
+    {
+      company: "Bluestock Fintech Pvt. Ltd.",
+      period: "Feb. 2026 – Apr. 2026",
+      positions: [
+        {
+          title: "Software Developer Intern",
+          description: [
+            `Worked on a {{stock trading platform}} using React.js, Node.js, Django, and PostgreSQL.`,
+            `Worked on {{real-time market data}} updates using WebSockets, so the application could show fresh data without relying only on manual page refreshes.`,
+            `Worked with financial data and API integrations related to {{Yahoo Finance}} and {{Google Finance}}.`,
+            `Tested backend features with {{Pytest}} and helped track down bugs during development.`,
+          ],
+        },
+      ],
+    },
+    {
+      company: "Tata Motors Ltd.",
+      period: "Jan. 2025 – Mar. 2025",
+      positions: [
+        {
+          title: "Software Developer Intern · Full Stack",
+          description: [
+            `Led a team of {{four interns}} to build a Ticket Management System for more than {{1,000 employees}}.`,
+            `Built backend APIs with Node.js and Express.js and used MongoDB to store ticket and employee request data.`,
+            `Worked on the ticket flow so employees could raise requests and keep track of their status.`,
+            `Worked with the team to debug issues, improve database operations, and manage code using Git.`,
+          ],
+        },
+      ],
+    },
+    {
+      company: "Dr. B.C. Roy Engineering College",
+      period: "Aug. 2022 – Jul. 2026",
+      positions: [
+        {
+          title: "B.Tech · Computer Science & Engineering (Data Science)",
+          description: [
+            `Completed my B.Tech in {{Computer Science and Engineering (Data Science)}} with a {{7.08 CGPA}}.`,
+            `During college, I learned core computer science concepts and applied them in web development, database, and data science projects.`,
+            `One of my projects was a Raspberry Pi-based Plant Surroundings Monitoring System that collected sensor data and used machine learning as part of the monitoring process.`,
+          ],
+        },
+      ],
+    },
+  ],
+  avatarUrl: "/hero_icon.webp",
 };
 
 export function Resume() {
@@ -79,10 +87,7 @@ export function Resume() {
 
                 <div className="space-y-6">
                   {experience.positions.map((position) => (
-                    <div
-                      key={position.title}
-                      className="space-y-4"
-                    >
+                    <div key={position.title} className="space-y-4">
                       <h4 className="text-lg font-semibold">
                         <span className="md:hidden">{experience.company} – </span>
                         {position.title}
